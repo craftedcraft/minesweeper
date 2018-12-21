@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #3DB24F;
 }
 
 #message {
@@ -26,11 +27,11 @@ body {
 }
 
 .board div {
-  color: green;
+  color: #3DB24F;
   font-size: 2rem;
   width: 75px;
   height: 75px;
-  border: 1px #ccc dotted;
+  border: 1px #006637 dotted;
   border-radius: 10%;
   background-color: white;
   margin: 3px;
@@ -44,7 +45,7 @@ body {
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/60% url("images/bomb.svg")#006637;
 }
 
 div.hidden {
@@ -57,4 +58,20 @@ div.hidden:hover {
 
 div.marked, div.marked:hover {
   background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-top: 45px;
+  border: 5px;
+  border-color: #3DB24F;
+  background: #eee;
+  color: #3DB24F;
+  border-radius: 30px;
+}
+
+button:hover {
+  color: #ffffff;
+  background: #3DB24F;
 }
